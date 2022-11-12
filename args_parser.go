@@ -200,7 +200,7 @@ func (k *kingpinParser) parse(args []string) (config, error) {
 		}
 	}
 	if k.noPrint {
-		pi, pp, pr = false, false, false
+		pi, pp, pr = false, false, true
 	}
 	format := formatFromString(k.formatSpec)
 	if format == nil {
